@@ -20,23 +20,33 @@ $(document).ready(function(){
 		  	console.log("Clicked New Game " + randomNumber);
 		  	console.log(typeof randomNumber);
 	  	});
-	  
-	  /*--- Prevent submit button from generating a new number 
-		$( "#guessButton" ).submit(function(e) {
-		  console.log( "Handler for .submit() called." );
-		  e.preventDefault();
-		});---*/
-	  	
+	  	  	
 	  	/*--- Compare random guess with random number ---*/
-		$("#guessButton").submit(function(e){	
+		$("#guessButton").click(function(e){	
 		  userGuess = $('#userGuess').val();
-		  console.log("User Guess " + userGuess);
+		  $('#userGuess').val('');
+		  console.log("User Guess is " + userGuess);
 		});
-
-
-
-
-
 });
 
+/*--- Compare User Guess with Random Number 
 
+var compareNumber = function(){
+	if(userGuess){
+		
+	}
+}---*/
+
+/*--- Difference Between User Guess and Random Number ---*/
+
+/*
+function numberDifference(){
+	var difference = userGuess - randomNumber;
+	console.log("Difference between guess is " + difference); 
+}
+*/
+
+$("#guessButton").click(function(e){
+	var difference = userGuess - randomNumber;
+	console.log("Difference between guess is " + difference);
+});
