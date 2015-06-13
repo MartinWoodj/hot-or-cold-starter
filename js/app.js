@@ -21,7 +21,8 @@ $(document).ready(function(){
   	});
   	  	
   	/*--- Compare random guess with random number ---*/
-	$("#guessButton").click(function(e){	
+	$("form").submit(function(e){	
+	  e.preventDefault();
 	  userGuess = $('#userGuess').val();
 	  $('#userGuess').val('');
 	  $("#guessList").append("<li>" + userGuess + "</li>");
