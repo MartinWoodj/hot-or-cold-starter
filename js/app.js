@@ -54,11 +54,10 @@ function tempFeedback(difference){
 		console.log("Is it chilly in here?");
 		$("#feedback").text("Is it chilly in here?");
 	}
-	else if(difference >= 51 && difference <= 100)
+	else if(difference >= 51 && difference <= 100){
 		console.log("Freezing cold!")
 		$("#feedback").text("Freezing cold!");
-	
-// 	$('#userGuess').val('');
+	}
 };
 
 
