@@ -43,19 +43,21 @@ function getDifference(randomNumber){
 function tempFeedback(difference){
 	if(difference >= 1 && difference <= 10){
 		console.log("Really hot!");
-		$("h2.feedback").text("Really hot!");
+		$("#feedback").text("Really hot!");
 	}
 	else if(difference >= 11 && difference <= 25){
 		console.log("Getting hotter!");
-		$("h2.feedback").text("Getting hotter!");
+		$("#feedback").text("Getting hotter!");
 	}
 	else if(difference >= 26 && difference <= 50){
 		console.log("Is it chilly in here?");
-		$("h2.feedback").text("Is it chilly in here?");
+		$("#feedback").text("Is it chilly in here?");
 	}
 	else if(difference >= 51 && difference <= 100)
 		console.log("Freezing cold!")
-		$("h2.feedback").text("Freezing cold!");
+		$("#feedback").text("Freezing cold!");
+	
+// 	$('#userGuess').val('');
 };
 
 
